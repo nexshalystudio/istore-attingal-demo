@@ -2,18 +2,4 @@
 @media(max-width:800px){.header{padding:0 5%;height:68px}.menu-toggle{display:block}.nav{display:none;position:absolute;top:68px;left:0;right:0;background:#11110f;padding:22px;flex-direction:column;gap:20px}.nav.open{display:flex}.nav-cta{display:none}.hero{padding:75px 7% 80px;min-height:760px;align-items:flex-start}.hero-copy{max-width:100%}.hero h1{font-size:58px}.hero-art{top:390px;right:0;width:100%;height:330px;transform:scale(.72)}.hero-bottom{left:7%;right:7%;font-size:7px}.hero-bottom span:nth-child(2){display:none}.intro,.social{grid-template-columns:1fr;gap:20px}.section{padding:70px 7%}.section-heading{display:block}.section-heading>p{text-align:left}.product-grid{grid-template-columns:repeat(2,1fr)}.product-art{height:155px}.feature-band{grid-template-columns:1fr;padding:65px 8%}.feature-visual{min-height:300px}.social{gap:28px}.visit{grid-template-columns:1fr;padding:70px 7%;gap:35px}.visit h2{font-size:45px}footer{gap:15px;flex-wrap:wrap}.announcement span{display:none}}
 @media(max-width:390px){.product-grid{gap:8px}.product-card{padding:8px}.product-art{height:130px}.hero h1{font-size:49px}.filters{overflow:auto}.filter{white-space:nowrap}.visit-actions{flex-wrap:wrap}}
 
-/* Original abstract showroom artwork — no shop sign photo */
-.visit-art{height:330px;position:relative;overflow:hidden;border:1px solid #5c4825;background:radial-gradient(ellipse at 50% 45%,#49371a 0,#1d1910 38%,#100f0c 72%);display:grid;place-items:center;isolation:isolate}
-.visit-art:before{content:"";position:absolute;inset:0;background:linear-gradient(125deg,transparent 25%,#d6b66e12 48%,transparent 68%);z-index:-1}
-.visit-orbit{position:absolute;border:1px solid #d1ad5a66;border-radius:50%;transform:rotate(-24deg)}
-.orbit-a{width:310px;height:155px;box-shadow:0 0 28px #c49c4b20}
-.orbit-b{width:390px;height:205px;transform:rotate(34deg);border-color:#a8894a44}
-.visit-pedestal{position:absolute;bottom:57px;width:190px;height:28px;border-radius:50%;background:linear-gradient(90deg,#3a2b13,#c8a65b,#443318);box-shadow:0 14px 32px #0009,0 0 30px #c5a04d30}
-.visit-device{position:absolute;bottom:78px;width:88px;height:150px;border:3px solid #c9b47d;border-radius:20px;background:linear-gradient(145deg,#555044,#11110f 55%,#6b572f);box-shadow:15px 20px 40px #0009;transform:rotate(9deg)}
-.visit-device:before{content:"";position:absolute;inset:7px;border-radius:14px;background:radial-gradient(circle at 50% 65%,#d5b56d,#56401e 35%,#171612 75%)}
-.visit-device span{position:absolute;z-index:2;top:11px;left:30px;width:25px;height:7px;border-radius:10px;background:#050505}
-.visit-device i{position:absolute;z-index:2;top:25px;left:10px;width:12px;height:12px;border-radius:50%;border:2px solid #a99a73;background:#171717}
-.visit-art-label{position:absolute;top:24px;font:700 15px Manrope;letter-spacing:5px;color:#e6d2a0}
-.visit-art-label b{color:#b18d49}
-.visit-art-caption{position:absolute;bottom:20px;font-size:8px;letter-spacing:3px;color:#ad9869}
-@media(max-width:800px){.visit-art{height:270px}.visit-orbit.orbit-a{width:260px}.visit-orbit.orbit-b{width:320px}}
+.rating-line{display:flex;align-items:center;gap:12px;margin:18px 0 12px;color:#cbb477;font-size:12px}.rating-line strong{font:700 17px Manrope}.rating-line span{color:#9b9485;font-size:11px}.hours{display:grid;gap:7px;margin:18px 0;color:#aaa18f;font-size:12px}.hours b{font-size:9px;letter-spacing:2px;color:#d2b36e;margin-bottom:3px}

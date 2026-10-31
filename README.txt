@@ -31,10 +31,10 @@ Edit the `products` array in script.js to change product names, categories, and 
 Current products are illustrative category placeholders, not confirmed stock.
 
 CONTACT
-The call link currently uses the number supplied in the prospect details: +91 73995 55333.
-Verify it with the owner before publishing. No WhatsApp link is activated in this concept.
+Call and WhatsApp links currently use +91 73995 55333, based on the information supplied. Verify both with the owner before publishing.
+Address: Ground Floor, Shams Complex (SS Plaza), V.V Clinic Road, Attingal, Kerala 695101.
+Hours shown: Monday-Saturday 9 AM-9 PM; Sunday 10 AM-9 PM. Verify before launch.
+Rating displayed: 4.8/5 from 60 Google reviews, based on the supplied listing. Recheck before launch.
 
 This is a static HTML/CSS/JS concept. It has no admin dashboard, online checkout, stock database,
 or self-service offer management. Those can be scoped as separate development features.
-
-REVISION: The shop sign photo is not used. It was visual inspiration only. The contact section now contains original CSS-based abstract showroom artwork.
