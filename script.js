@@ -1,27 +1,17 @@
-// Edit this list after the shop confirms the products it actually sells.
-const products = [
-  {name:"iPhone",category:"iphone",tag:"SMARTPHONES",note:"Explore available models",art:"phone-shape"},
-  {name:"AirPods",category:"audio",tag:"AUDIO",note:"Ask about current availability",art:"earbuds"},
-  {name:"Apple Watch",category:"wearables",tag:"WEARABLES",note:"Explore available models",art:"watch-shape"},
-  {name:"Charging essentials",category:"accessories",tag:"ACCESSORIES",note:"Accessories and everyday essentials",art:"charger"},
-  {name:"iPhone Pro range",category:"iphone",tag:"SMARTPHONES",note:"Ask the showroom for details",art:"phone-shape"},
-  {name:"Wireless audio",category:"audio",tag:"AUDIO",note:"Ask about available options",art:"earbuds"},
-  {name:"Smart wearables",category:"wearables",tag:"WEARABLES",note:"Ask about current availability",art:"watch-shape"},
-  {name:"Power accessories",category:"accessories",tag:"ACCESSORIES",note:"Ask about compatible accessories",art:"charger"}
+const products=[
+{name:"iPhone",category:"phone",tag:"SMARTPHONES",desc:"Explore available iPhone models",art:"phone-shape"},
+{name:"AirPods",category:"audio",tag:"AUDIO",desc:"Ask about current availability",art:"earbuds"},
+{name:"Apple Watch",category:"watch",tag:"WEARABLES",desc:"Explore available models",art:"watch-shape"},
+{name:"Accessories",category:"accessory",tag:"ACCESSORIES",desc:"Everyday tech essentials",art:"accessory"},
+{name:"iPhone Pro",category:"phone",tag:"SMARTPHONES",desc:"Ask the showroom for details",art:"phone-shape"},
+{name:"Wireless Audio",category:"audio",tag:"AUDIO",desc:"Discover audio accessories",art:"earbuds"},
+{name:"Smart Wearables",category:"watch",tag:"WEARABLES",desc:"Ask about available options",art:"watch-shape"},
+{name:"Charging Essentials",category:"accessory",tag:"ACCESSORIES",desc:"Check compatible accessories",art:"accessory"}
 ];
 const grid=document.getElementById("productGrid");
-function render(filter="all"){
-  grid.innerHTML=products.filter(p=>filter==="all"||p.category===filter).map(p=>`
-    <article class="product-card">
-      <div class="product-art"><div class="device ${p.art}"></div></div>
-      <div class="product-meta"><small>${p.tag}</small><h3>${p.name}</h3><p>${p.note}</p><a href="#visit">ENQUIRE AT SHOWROOM ↗</a></div>
-    </article>`).join("");
-}
+function render(filter="all"){grid.innerHTML=products.filter(p=>filter==="all"||p.category===filter).map(p=>`<article class="product-card"><div class="product-art"><div class="device ${p.art}"></div></div><div class="product-meta"><small>${p.tag}</small><h3>${p.name}</h3><p>${p.desc}</p><a href="https://wa.me/917399555333" target="_blank" rel="noopener">ENQUIRE ON WHATSAPP ↗</a></div></article>`).join("")}
 render();
-document.querySelectorAll(".filter").forEach(btn=>btn.addEventListener("click",()=>{
-  document.querySelectorAll(".filter").forEach(b=>b.classList.remove("active"));
-  btn.classList.add("active");render(btn.dataset.filter);
-}));
-const menu=document.querySelector(".menu-toggle"),nav=document.querySelector(".nav");
-menu.addEventListener("click",()=>{const open=nav.classList.toggle("open");menu.setAttribute("aria-expanded",String(open));});
+document.querySelectorAll(".filter").forEach(b=>b.addEventListener("click",()=>{document.querySelectorAll(".filter").forEach(x=>x.classList.remove("active"));b.classList.add("active");render(b.dataset.filter)}));
+const toggle=document.querySelector(".menu-toggle"),nav=document.querySelector(".nav");
+toggle.addEventListener("click",()=>nav.classList.toggle("open"));
 nav.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>nav.classList.remove("open")));
