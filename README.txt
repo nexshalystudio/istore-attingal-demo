@@ -36,3 +36,5 @@ Verify it with the owner before publishing. No WhatsApp link is activated in thi
 
 This is a static HTML/CSS/JS concept. It has no admin dashboard, online checkout, stock database,
 or self-service offer management. Those can be scoped as separate development features.
+
+REVISION: The shop sign photo is not used. It was visual inspiration only. The contact section now contains original CSS-based abstract showroom artwork.
